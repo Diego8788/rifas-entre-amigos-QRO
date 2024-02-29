@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilosp.css">
+  <title>Panel</title>
+
+  <style>
+   #cerrar {
+      background-color: red; 
+      border: none; 
+      color: white;
+      text-decoration: none;
+      font-size: 16px;  
+      border-radius: 5px;
+    }
+     #cerrar:hover {
+      color: black;
+    }
+  </style>
+
+  <script type="module" src="login.js" defer></script>
+  <script type="module" src="paneladmin.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Panel administrativo #Nombre rifa#</h1>
+    <div class="menu-boton">
+      <p type="submit" id="login"></p> <button type="submit" id="cerrar">CERRAR SESIÓN</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="panel.html">Reservado</a>
+    <a href="panel2.html">Pagados</a>
+  </nav>
+
+  <div class="centrado">
+    <input type="text" id="inputBusquedaBoletos" placeholder="Buscar Boletos reservados">
+    <button id="btnBuscarBoletos">Buscar</button>
+    <div id="contenedorResultadosBoletos"></div>
+  </div>
+
+  <center><h2>Boletos Reservados</h2></center>
+
+  <div id="contenedorBoletosEnReservas"></div>
+  <div class="centrado" id="contenedorCantidadBoletos"></div>
+  <div id="contenedorCantidadTotal"></div>
+
+  <div class="centrado">
+    <p id="btnBuscar"></p>
+    <div id="contenedorResultados"></div>
+  </div>
+
+
+  <script>
+    // Verificar si el usuario está autenticado al cargar la página
+    const usuarioAutenticado = localStorage.getItem('usuarioAutenticado');
+
+    if (!usuarioAutenticado) {
+      console.log('Usuario no autenticado. Redirigiendo a login.html');
+      window.location.href = 'login.html';
+    } else {
+      console.log('Usuario autenticado. Permitiendo acceso a la página.');
+    }
+  </script>
+
+
+</body>
+
+</html>

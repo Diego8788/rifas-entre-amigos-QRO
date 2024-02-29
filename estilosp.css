@@ -1,0 +1,440 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.fondo-obscuro {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1000;
+}
+
+
+.ventana-emergente {
+
+flex-direction: column;
+position: fixed;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 50px;
+z-index: 1001;
+}
+
+
+.fila-botones {
+display: flex;
+border-radius: 8px;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+}
+
+.ventana-emergente p {
+margin-bottom: 15px;
+color: black;
+font-weight: bold;
+
+}
+
+.ventana-emergente button {
+margin: 5px;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+.ventana-emergente input {
+  font-size: 14px;
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ventana-emergente #selectEstado  {
+  font-size: 14px;
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.selectEstado {
+  font-size: 14px;
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.cerrar-ventana {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+header {
+  background-color: #008F39;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 0.5em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 20px;
+}
+.numero-container button {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.numero-container button:hover {
+  background-color: #555;
+}
+#numeroSeleccionado {
+  text-align: center;
+}
+
+.numero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenedorCantidadBoletos{
+margin-top: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+
+#contenedorCantidadBoletospagados {
+margin-top: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+#contenedorCantidadOportunidades {
+margin-top: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+#contenedorCantidadOportunidadespagados {
+margin-top: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+
+/* contenedorBoletosEnReservas reservados uno */
+#contenedorBoletosEnReservas {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #9c9c9c; 
+  padding: 15px 25px; 
+}
+
+#contenedorNumerospagados {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #9c9c9c; 
+  padding: 15px 24px; 
+}
+
+
+#contenedorBoletosEnReservaspagados {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #9c9c9c; 
+  padding: 15px; 
+}
+/* ccontenedorOportunidadesNumeros reservados dos */
+#contenedorOportunidadesNumeros {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #9c9c9c; 
+  padding: 15px; 
+  
+}
+/*  contenedor de numeros pagados dos */
+#contenedorOportunidadesNumerospagados {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #9c9c9c; 
+  padding: 15px 25px;
+
+}
+
+/* contenedorOportunidadesNumeros botones nuemros 2 */
+#contenedorOportunidadesNumeros button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+/* coontenedor de numeeos botones 2 */
+#contenedorOportunidadesNumerospagados button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; 
+    background-color: #00ff00;
+   
+  
+}
+
+/* contenedor de botones numeros uno */
+#contenedorBoletosEnReservas button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; 
+  background-color: yellow;
+ 
+}
+
+/* contenedor de numeros pagados dos */
+#contenedorNumerospagados button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #00ff00;
+  cursor: pointer;
+  text-align: center; 
+  
+}
+
+.fondo-obscuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+
+ #cerrar {
+      background-color: #4CAF50; /* Color de fondo */
+      border: none; /* Sin borde */
+      color: white; /* Color del texto */
+      padding: 10px 20px; /* Espacio alrededor del texto */
+      text-align: center; /* Alineación del texto */
+      text-decoration: none; /* Sin decoración de texto */
+      display: inline-block; /* Mostrar como bloque en línea */
+      font-size: 16px; /* Tamaño del texto */
+      margin-top: 10px; /* Margen superior */
+      cursor: pointer; /* Cambiar cursor al pasar el ratón */
+      border-radius: 5px; /* Borde redondeado */
+    }
+.cerrar-ventana {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* styles.css */
+
+.ventana-emergente {
+background: white;
+padding: 40px;
+border-radius: 10px;
+max-width: 400px;
+text-align: center;
+align-items: center
+;
+} 
+
+.ventana-emergente button{
+padding: 10px;
+} 
+
+/* Estilos de los buscadores */
+#buscadorOportunidades,
+#buscadorBoletos {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+#inputBusqueda,
+#inputBusquedaBoletos {
+text-align: center;
+padding: 8px;
+margin-bottom: 10px;
+width: 250px;
+font-size: 14px;
+margin-left: auto; /* Centra horizontalmente */
+margin-right: auto; /* Centra horizontalmente */
+}
+
+#btnBuscar,
+#btnBuscarBoletos {
+padding: 8px 12px;
+font-size: 14px;
+cursor: pointer;
+margin-left: auto; /* Centra horizontalmente */
+margin-right: auto; /* Centra horizontalmente */
+}
+
+/* Estilos de los resultados */
+#contenedorResultadosOportunidades,
+#contenedorResultadosBoletos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/* boton resultados de boletos reservados */
+#contenedorResultadosBoletos button{
+padding: 10px;
+color: #000000;
+background-color: yellow;
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+margin: 5px;
+cursor: pointer;
+text-align: center; 
+}
+
+#contenedorresultadosBoletos{
+display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  max-height: 350px; 
+  background-color: #6d6d6d;; 
+  padding: 10px; 
+}
+
+#contenedorResultados {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+/* boton Resultados reservados de las oportunidades */
+#contenedorResultados button{
+padding: 10px;
+color: #000000;
+background-color: yellow;
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+margin: 5px;
+cursor: pointer;
+text-align: center; 
+}
+
+.botones {
+margin: 5px;
+padding: 10px;
+background-color: #008F39;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Otros estilos */
+#contenedorCantidadTotal {
+margin-top: 20px;
+font-size: 16px;
+font-weight: bold;
+margin-left: auto; /* Centra horizontalmente */
+margin-right: auto; /* Centra horizontalmente */
+}
+
+.centrado {
+  align-items: center;
+text-align: center;
+margin: 10px;
+}
+
+.centrado input,
+.centrado button {
+  text-align: center;
+margin: 0 auto; /* Esto centrará horizontalmente */
+display: block; /* Para que el margin: auto funcione correctamente */
+}
+
+/* boton de busqueda resultado  */
+.boton-resultado {
+background-color: #3498db;
+color: #fff;
+}
+
+
+

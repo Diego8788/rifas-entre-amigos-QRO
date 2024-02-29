@@ -1,0 +1,135 @@
+.img-cart {
+  width: 200px;
+  margin-bottom: 20px;
+  animation: flotar 1.2s ease-in-out infinite;
+  text-align: center;
+
+}
+body {
+    background: url('assets/fondo-body.png');
+}
+
+.centrado {
+  text-align: center;
+  margin: 10px;
+  }
+
+  
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+.container-card {
+  position: relative;
+  margin: 180px auto;
+  width: 350px;
+  height: 470px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(5, 74, 22, 0.1), 0px 60px 75px -25px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ticket-content input[type="text"],
+.ticket-content button {
+    margin: 0 auto; 
+    display: block; 
+    width: 80%; 
+    padding: 10px; 
+}
+
+.ticket-content button {
+    margin-top: 10px; 
+    width: 80%; 
+}
+
+
+.img-cart {
+  width: 200px;
+  margin-bottom: 20px;
+  animation: flotar 1.2s ease-in-out infinite;
+  text-align: center;
+
+}
+
+@keyframes flotar {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#infoTextoBoleto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#infoTextoBoleto h3 {
+  color: #008F39;
+  margin-bottom: 10px;
+}
+
+#infoTextoBoleto p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ip-add-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008F39;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.ip-add-cart:hover {
+  background-color: #006f2f;
+}
+
+
+
+
+
+#buscarInput {
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  text-align: center;
+
+}
+
+#buscarBoton {
+  padding: 8px 15px; 
+  background-color: #008F39; 
+  color: white;
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+

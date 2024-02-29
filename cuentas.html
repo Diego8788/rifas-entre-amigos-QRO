@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Design landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Cuentas</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="public_html/assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Design main styles -->
+    <link rel="stylesheet" href="public_html/assets/css/creative-design.css">
+
+    <style>
+        /* Estilo adicional para resaltar el número de cuenta al pasar el cursor */
+        ul li:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navbar -->
+    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
+    data-offset-top="20" style="background-color: #70b578; padding: 15px 0;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/4R1zvQn/logo-claro.png" alt="Logo de Creative Design" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <h6>Inicio</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rifaentreamigos-qro.000webhostapp.com/cuentas.html">
+                        <h6>Cuentas</h6>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://rifaentreamigos-qro.000webhostapp.com/verificador.html">
+                        <h6>Verificador</h6>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Contact Section -->
+    <section id="cuentas" class="text-center">
+        <div class="container">
+            <div class="my-5">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="mb-4">Transferencias y cajero</h1>
+                <p>Selecciona y copia el número de cuenta para realizar el pago:</p>
+                
+                <div class="col-sm-10 col-md-4 mx-auto">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3" style="color: #14549C;">BBVA:</h3>
+                            <ul class="list-unstyled">
+                                <li onclick="copiarNumero('0123-4567-8901-2345')" class="mb-3">
+                                    <strong>Tarjeta:</strong> 0123-4567-8901-2345
+                                </li>
+                                <li onclick="copiarNumero('9876-5432-1098-7654')">
+                                    <strong>Clave:</strong> 9876-5432-1098-7654
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Beneficiario:</strong> Juan Pérez
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Referencia:</strong> EN CONCEPTO DE PAGO SOLO TU NOMBRE PARA QUE SEA VALIDO TU BOLETO.
+                                </li>
+                                <!-- Agrega más bancos según sea necesario -->
+                            </ul>
+                            <br>
+                            <h3 class="card-title mb-3" style="color: red">SANTANDER:</h3>
+                            <ul class="list-unstyled">
+                                <li onclick="copiarNumero('0123-4567-8901-2345')" class="mb-3">
+                                    <strong>Tarjeta:</strong> 0123-4567-8901-2345
+                                </li>
+                                <li onclick="copiarNumero('9876-5432-1098-7654')">
+                                    <strong>Clave:</strong> 9876-5432-1098-7654
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Beneficiario:</strong> Juan Pérez
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Referencia:</strong> EN CONCEPTO DE PAGO SOLO TU NOMBRE PARA QUE SEA VALIDO TU BOLETO.
+                                </li>
+                                <!-- Agrega más bancos según sea necesario -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <h1 class="mb-4">Pago en oxxo, 7eleven, farmacias</h1>
+                <p>Selecciona y copia el número de cuenta para realizar el pago:</p>
+                <div class="col-sm-10 col-md-4 mx-auto">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3" style="color: red">OXXO:</h3>
+                            <ul class="list-unstyled">
+                                <li onclick="copiarNumero('0123-4567-8901-2345')" class="mb-3">
+                                    <strong>Tarjeta:</strong> 0123-4567-8901-2345
+                                </li>
+                                <li onclick="copiarNumero('9876-5432-1098-7654')">
+                                    <strong>Clave:</strong> 9876-5432-1098-7654
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Beneficiario:</strong> Juan Pérez
+                                </li>
+                                <li>
+                                    <strong>Referencia:</strong> EN CONCEPTO DE PAGO SOLO TU NOMBRE PARA QUE SEA VALIDO TU BOLETO.
+                                </li>
+                                <!-- Agrega más bancos según sea necesario -->
+                            </ul>
+                            <br>
+                            <h3 class="card-title mb-3" style="color: orangered">7eleven:</h3>
+                            <ul class="list-unstyled">
+                                <li onclick="copiarNumero('0123-4567-8901-2345')" class="mb-3">
+                                    <strong>Tarjeta:</strong> 0123-4567-8901-2345
+                                </li>
+                                <li onclick="copiarNumero('9876-5432-1098-7654')">
+                                    <strong>Clave:</strong> 9876-5432-1098-7654
+                                </li>
+                                <br>
+                                <li>
+                                    <strong>Beneficiario:</strong> Juan Pérez
+                                </li>
+                                <li>
+                                    <strong>Referencia:</strong> EN CONCEPTO DE PAGO SOLO TU NOMBRE PARA QUE SEA VALIDO TU BOLETO.
+                                </li>
+                                <!-- Agrega más bancos según sea necesario -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section -->
+    <section class="pb-0">
+        <!-- Container -->
+        <div class="container">
+            <!-- Pre footer -->
+            <div class="pre-footer">
+                <ul class="list">
+                    <li class="list-head">
+                        <h6 class="font-weight-bold">Sobre nosotros</h6>
+                    </li>
+                    <li class="list-body">
+                        <p>Trabajamos de la mano con cada uno de nuestros clientes para realizar proyectos adecuados
+                            y enfocados a sus objetivos.</p>
+                        <a href="https://www.marketinghemisferio.com/" target="_blank"><strong class="text-primary">Marketing</strong>
+                            <span class="text-dark">Hemisferio</span></a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-head">
+                        <h6 class="font-weight-bold">Informacion de contacto</h6>
+                    </li>
+                    <li class="list-body">
+                        <p>Contáctenos y nos comunicaremos con usted dentro de las 24 horas.</p>
+                        <p><i class="ti-location-pin"></i> Tel: 44.22.84.39.20</p>
+                        <p><i class="ti-email"></i>Cadereyta 105, La Estrella, Querétaro, Qro.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/hemisferiocreatividaddemente" class="link" target="_blank"><i
+                                    class="ti-facebook"></i></a>
+                            <a href="https://www.instagram.com/creatividaddmentehemisferio/" class="link" target="_blank"><i
+                                    class="ti-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- foooter -->
+            <center>
+                <footer class="footer">
+                    <p>Copyright
+                        <script>document.write(new Date().getFullYear())</script> &copy; <a
+                            href="https://www.marketinghemisferio.com/" target="_blank">Marketing Hemisferio</a>
+                    </p>
+                </footer>
+            </center>
+
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+
+    <!-- bootstrap affix -->
+    <script src="public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Design js -->
+    <script src="public_html/assets/js/creative-design.js"></script>
+
+    <script type="module" src="app.js" defer></script>
+
+    <script>
+        function copiarNumero(numero) {
+            // Crear un elemento de texto temporal
+            var tempInput = document.createElement("input");
+            tempInput.value = numero;
+            
+            // Agregar el elemento al documento
+            document.body.appendChild(tempInput);
+            
+            // Seleccionar y copiar el contenido del elemento
+            tempInput.select();
+            document.execCommand("copy");
+            
+            // Eliminar el elemento temporal
+            document.body.removeChild(tempInput);
+
+            // Puedes mostrar un mensaje o realizar otras acciones después de copiar
+            alert('Número copiado: ' + numero);
+        }
+    </script>
+
+</body>
+
+</html>

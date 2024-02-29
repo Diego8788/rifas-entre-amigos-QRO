@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Tus metaetiquetas y enlaces de estilos aquí -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilosp.css">
+  <title>Panel</title>
+  <style>
+   #cerrar {
+      background-color: red; 
+      border: none; 
+      color: white;
+      text-decoration: none;
+      font-size: 16px;  
+      border-radius: 5px;
+    }
+     #cerrar:hover {
+      color: black;
+    }
+  </style>
+  <script type="module" src="login.js" defer></script>
+  <script type="module" src="paneladmin.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Rifas</h1>
+    <div class="menu-boton">
+      <p type="submit" id="login"></p> <button type="submit" id="cerrar">CERRAR SESIÓN</button>
+    </div>
+  </header>
+  <nav>
+    <a href="panel.html">Reservado</a>
+    <a href="panel2.html"> pagados</a>
+  </nav>
+
+
+<center><h2>Números pagados</h2></center>
+<div id="btnBuscarBoletos"></div>
+<div id="contenedorNumerospagados"></div>
+<div class="centrado" id="contenedorCantidadBoletospagados"></div>
+<div id="contenedorCantidadTotalpagados"></div>
+
+<center><h2>Oportunidades pagados</h2></center>
+<div id="btnBuscar" ></div>
+<div id="contenedorOportunidadesNumerospagados"></div>
+<div class="centrado" id="contenedorCantidadOportunidadespagados"></div>
+<div id="contenedorCantidadTotalpagados"></div>
+<script>
+  // Verificar si el usuario está autenticado al cargar la página
+  const usuarioAutenticado = localStorage.getItem('usuarioAutenticado');
+
+  if (!usuarioAutenticado) {
+    console.log('Usuario no autenticado. Redirigiendo a login.html');
+    window.location.href = 'login.html';
+  } else {
+    console.log('Usuario autenticado. Permitiendo acceso a la página.');
+  }
+</script>
+
+</body>
+
+</html>
